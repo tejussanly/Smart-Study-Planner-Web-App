@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Smart Study Planner</h1>
+    <p class="subtitle">Organize your study tasks and manage deadlines easily.</p>
+
+    <div class="form-box">
+      <input type="text" id="subjectInput" placeholder="Enter subject name" />
+      <input type="text" id="taskInput" placeholder="Enter study task" />
+      <input type="date" id="deadlineInput" />
+
+      <select id="priorityInput">
+        <option value="">Select Priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-section">
+      <h2>My Study Tasks</h2>
+      <div id="taskList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
